@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Toheed Hashim - Frontend Developer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Explore featured web projects by Toheed Hashim - BYD Shark 6 Showcase, Interactive Registration Form, and Structured Data Layouts.">
+    <meta name="keywords" content="Toheed Hashim Projects, Frontend Portfolio, BYD Shark 6, Web Developer Karachi">
+    <meta name="author" content="Toheed Hashim">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Canvas & Background Grid Pattern -->
+    <canvas id="ambientCanvas"></canvas>
+    <div class="bg-grid-pattern"></div>
+    <div class="cosmic-orb orb-1"></div>
+    <div class="cosmic-orb orb-2"></div>
+    <div class="cyber-scanline"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ==========================================================================
+         TOP NAVIGATION BAR
+         ========================================================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="index.html#home" class="brand-logo" id="brandLogo">
+                <div class="logo-icon">T</div>
+                <span>TOHEED<span class="logo-dot">.</span></span>
+                <span class="dev-tag">DEV</span>
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="Projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="Contacts.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Nav Action & Hamburger -->
+            <div class="nav-actions">
+                <a href="Contacts.html" class="btn-hire">
+                    <span>Hire Me</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================================================
+         PROJECTS SHOWCASE
+         ========================================================================== -->
+    <main style="padding-top: calc(var(--nav-height) + 40px); min-height: 85vh;">
+        <section class="projects-section" style="padding-top: 20px;">
+            <div class="container">
+                <!-- Header with Animation -->
+                <div class="section-header reveal">
+                    <div class="section-tag glow-animated">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Featured Deployments</span>
+                    </div>
+                    <h1 class="section-title">
+                        Engineered Works & <span class="gradient-text">Live Applications.</span>
+                    </h1>
+                    <p class="section-subtitle">
+                        Explore hand-crafted web applications built with modern frontend architecture, responsive design principles, and live hosting.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: BYD Shark 6 Showcase -->
+                    <div class="project-card reveal delay-1">
+                        <div class="project-media-wrap">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span class="b-dot"></span>
+                                    <span class="b-dot"></span>
+                                    <span class="b-dot"></span>
+                                </div>
+                                <div class="browser-url">
+                                    <i class="fa-solid fa-lock"></i>
+                                    https://byd-shark-6.surge.sh
+                                </div>
+                            </div>
+                            <div class="project-media-inner">
+                                <img src="Screenshot 2026-07-10 171017.png" alt="BYD Shark 6 Showcase Project Preview">
+                                <div class="project-overlay">
+                                    <a href="https://byd-shark-6.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <span>Launch Live App</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info-wrap">
+                            <div>
+                                <span class="project-category">Automotive Digital Showcase</span>
+                                <h3 class="project-title">BYD Shark 6 Hybrid Showcase</h3>
+                                <p class="project-desc">
+                                    An immersive automotive web presentation crafted to exhibit the futuristic engineering of the BYD Shark 6 PHEV pickup truck. Features high-definition media, responsive vehicle specs, and performance presentation.
+                                </p>
+                                <ul class="project-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> High-definition product hero presentation & vehicle telemetry</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Fully responsive grid layout across mobile, tablet, and widescreen</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Deployed live on Surge with optimized asset delivery</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="project-tech-stack">
+                                    <span class="tech-pill">HTML5</span>
+                                    <span class="tech-pill">Modern CSS</span>
+                                    <span class="tech-pill">Responsive Design</span>
+                                    <span class="tech-pill">Automotive UI</span>
+                                    <span class="tech-pill">Surge Deployment</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://byd-shark-6.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                        <span>Live Preview</span>
+                                        <i class="fa-solid fa-external-link"></i>
+                                    </a>
+                                    <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="btn-project-outline">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span>Source Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Interactive Registration Suite -->
+                    <div class="project-card reverse reveal delay-2">
+                        <div class="project-media-wrap">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span class="b-dot"></span>
+                                    <span class="b-dot"></span>
+                                    <span class="b-dot"></span>
+                                </div>
+                                <div class="browser-url">
+                                    <i class="fa-solid fa-lock"></i>
+                                    https://icon-form.surge.sh
+                                </div>
+                            </div>
+                            <div class="project-media-inner">
+                                <img src="form.png" alt="Interactive User Registration Form Preview">
+                                <div class="project-overlay">
+                                    <a href="https://icon-form.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <span>Launch Live App</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info-wrap">
+                            <div>
+                                <span class="project-category">UX / Form Architecture</span>
+                                <h3 class="project-title">Interactive Registration & Validation Suite</h3>
+                                <p class="project-desc">
+                                    A streamlined user onboarding portal designed with iconography, input field feedback, and accessible UX patterns. Built to solve common data entry friction with instant client-side feedback.
+                                </p>
+                                <ul class="project-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> Contextual input icons and stateful focus styling</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Frictionless input validation and clean error handling UI</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Modular CSS structure adaptable to any web application</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="project-tech-stack">
+                                    <span class="tech-pill">JavaScript</span>
+                                    <span class="tech-pill">Form Validation</span>
+                                    <span class="tech-pill">CSS Custom Properties</span>
+                                    <span class="tech-pill">UI/UX Design</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://icon-form.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                        <span>Live Preview</span>
+                                        <i class="fa-solid fa-external-link"></i>
+                                    </a>
+                                    <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="btn-project-outline">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span>Source Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Structured Data Representation -->
+                    <div class="project-card reveal delay-3">
+                        <div class="project-media-wrap">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span class="b-dot"></span>
+                                    <span class="b-dot"></span>
+                                    <span class="b-dot"></span>
+                                </div>
+                                <div class="browser-url">
+                                    <i class="fa-solid fa-lock"></i>
+                                    http://toheed-table.surge.sh
+                                </div>
+                            </div>
+                            <div class="project-media-inner">
+                                <img src="Screenshot 2026-07-10 172828.png" alt="Advanced Data Presentation Preview">
+                                <div class="project-overlay">
+                                    <a href="http://toheed-table.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <span>Launch Live App</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info-wrap">
+                            <div>
+                                <span class="project-category">Data Layout & CSS Engineering</span>
+                                <h3 class="project-title">Advanced Data Presentation & Layouts</h3>
+                                <p class="project-desc">
+                                    An exploration of structured information architecture, table hierarchy, and CSS color matrices. Focuses on tabular data clarity, cell contrast, and responsive data formatting for administrative dashboards.
+                                </p>
+                                <ul class="project-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> Scannable tabular hierarchy and harmonious color palette</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Cross-browser consistent table borders and cell alignments</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Foundation for complex dashboard data representations</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="project-tech-stack">
+                                    <span class="tech-pill">HTML Tables</span>
+                                    <span class="tech-pill">CSS Layouts</span>
+                                    <span class="tech-pill">Data Architecture</span>
+                                    <span class="tech-pill">Color Coordination</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="http://toheed-table.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                        <span>Live Preview</span>
+                                        <i class="fa-solid fa-external-link"></i>
+                                    </a>
+                                    <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="btn-project-outline">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span>Source Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html#home" class="brand-logo">
+                        <div class="logo-icon">T</div>
+                        <span>TOHEED<span class="logo-dot">.</span></span>
+                    </a>
+                    <p>Frontend Developer crafting pixel-perfect, accessible, and high-performance digital experiences.</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:toheedhashim90@gmail.com" class="social-link" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Toheed Hashim. All rights reserved.</p>
+                <p>Engineered with HTML5, Modern Vanilla CSS & JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action with Heavy Radar Pulse -->
+    <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="floating-whatsapp pulse-radar-heavy" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification Element -->
+    <div class="toast-msg" id="toastMsg"></div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>

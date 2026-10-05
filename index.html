@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toheed Hashim | Frontend Developer & Aspiring Software Engineer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio of Toheed Hashim - Frontend Developer & Aspiring Software Engineer in Karachi, building sleek, modern, high-performance web applications and AI-accelerated workflows.">
+    <meta name="keywords" content="Toheed Hashim, Frontend Developer, Web Developer Karachi, Software Engineer, Portfolio, HTML5, CSS3, JavaScript, Bootstrap">
+    <meta name="author" content="Toheed Hashim">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Canvas & Background Grid Pattern -->
+    <canvas id="ambientCanvas"></canvas>
+    <div class="bg-grid-pattern"></div>
+    <div class="cosmic-orb orb-1"></div>
+    <div class="cosmic-orb orb-2"></div>
+    <div class="cyber-scanline"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ==========================================================================
+         TOP NAVIGATION BAR
+         ========================================================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" id="brandLogo">
+                <div class="logo-icon">T</div>
+                <span>TOHEED<span class="logo-dot">.</span></span>
+                <span class="dev-tag">DEV</span>
+            </a>
+
+            <!-- Nav Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Nav Action & Hamburger -->
+            <div class="nav-actions">
+                <a href="#contact" class="btn-hire">
+                    <span>Hire Me</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Hero Content -->
+                <div class="hero-content">
+                    <!-- Status Badge -->
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for Internships & Junior Roles</span>
+                    </div>
+
+                    <!-- Main Headline with Cyber Glitch -->
+                    <h1 class="hero-title glitch-text">
+                        Crafting High-Impact Web Interfaces with <span class="name-highlight">Modern Precision.</span>
+                    </h1>
+
+                    <!-- Dynamic Typing Text -->
+                    <div class="typed-role-container">
+                        <span class="prefix">&gt;</span>
+                        <span id="typedRole">Frontend Development Specialist</span>
+                        <span class="typed-cursor"></span>
+                    </div>
+
+                    <!-- Intro Narrative -->
+                    <p class="hero-description">
+                        Hi, I'm <strong>Toheed Hashim</strong> — a Karachi-based Frontend Developer and aspiring Software Engineer passionate about translating complex ideas into elegant, responsive, and blazing-fast user interfaces, supercharged with modern AI workflows.
+                    </p>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-rocket"></i>
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <div class="metric-number">3<span class="accent">+</span></div>
+                            <div class="metric-label">Featured Projects</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-number">100<span class="accent">%</span></div>
+                            <div class="metric-label">Responsive Standards</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-number">AI<span class="accent">+</span></div>
+                            <div class="metric-label">Accelerated Workflow</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Visual / Avatar -->
+                <div class="hero-media">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-border-ring"></div>
+                        <img src="toheed.jpeg" alt="Toheed Hashim - Frontend Developer" class="avatar-img">
+                        
+                        <!-- Floating Glass Badges -->
+                        <div class="floating-badge badge-1">
+                            <div class="badge-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="badge-text">
+                                <strong>Clean Code</strong>
+                                <span>Modern ES6+ & CSS3</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-2">
+                            <div class="badge-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="badge-text">
+                                <strong>AI Augmented</strong>
+                                <span>Next-Gen Velocity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag glow-animated">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Biography & Philosophy</span>
+                </div>
+                <h2 class="section-title">
+                    Driven by Curiosity, Engineered with <span class="gradient-text">Purpose.</span>
+                </h2>
+                <p class="section-subtitle">
+                    Bridging foundational software engineering fundamentals with state-of-the-art frontend craftsmanship.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Narrative -->
+                <div class="about-narrative reveal-left delay-1">
+                    <p>
+                        I am a <strong>Frontend Developer & Aspiring Software Engineer</strong> based in Karachi, Pakistan. My journey in web development is driven by a deep obsession with how visual design, typography, and interactive logic coalesce into memorable digital experiences.
+                    </p>
+                    <p>
+                        Beyond traditional markup and styling, I actively harness <strong>cutting-edge AI engineering tools</strong> (such as Myraa, Jarvis, and agentic environments) to prototype rapidly, refactor systematically, and deliver clean, scalable, production-grade solutions in record time.
+                    </p>
+
+                    <!-- Key Highlights Grid -->
+                    <div class="about-highlights">
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="highlight-content">
+                                <h4>Location</h4>
+                                <p>Karachi, Pakistan (Open to Global Remote / Relocation)</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <div class="highlight-content">
+                                <h4>Primary Discipline</h4>
+                                <p>Frontend Architecture & Responsive Web Systems</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <div class="highlight-content">
+                                <h4>AI-First Builder</h4>
+                                <p>Leveraging LLMs & AI Toolchains for 10x Velocity</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <div class="highlight-content">
+                                <h4>Goal</h4>
+                                <p>Securing High-Impact Internships & Junior Roles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Terminal Preview -->
+                <div class="about-code-window reveal-right delay-2 float-animated">
+                    <div class="code-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">developer_profile.json</span>
+                        <span><i class="fa-solid fa-file-code" style="color: #64748b;"></i></span>
+                    </div>
+                    <pre class="code-body"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Toheed Hashim"</span>,
+  <span class="property">role</span>: <span class="string">"Frontend Developer & Aspiring SWE"</span>,
+  <span class="property">location</span>: <span class="string">"Karachi, Pakistan"</span>,
+  <span class="property">openToWork</span>: <span class="boolean">true</span>,
+  <span class="property">coreCompetencies</span>: [
+    <span class="string">"HTML5 Semantic Architecture"</span>,
+    <span class="string">"CSS3 / Grid / Flexbox / Keyframes"</span>,
+    <span class="string">"Modern JavaScript (ES6+)"</span>,
+    <span class="string">"Bootstrap & Mobile-First Design"</span>,
+    <span class="string">"Git Version Control & Surge CI/CD"</span>
+  ],
+  <span class="property">aiIntegration</span>: {
+    <span class="property">tools</span>: [<span class="string">"Jarvis"</span>, <span class="string">"Myraa"</span>, <span class="string">"Agentic AI"</span>],
+    <span class="property">philosophy</span>: <span class="string">"Fast prototyping, zero technical debt"</span>
+  },
+  <span class="property">callToAction</span>: <span class="keyword">function</span>() {
+    <span class="keyword">return</span> <span class="string">"Ready to make an immediate impact on your team."</span>;
+  }
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & TECHNICAL MASTERY SECTION
+         ========================================================================== -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag glow-animated">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Technical Capabilities</span>
+                </div>
+                <h2 class="section-title">
+                    Modern Stack & <span class="gradient-text">Engineered Toolset.</span>
+                </h2>
+                <p class="section-subtitle">
+                    A thoughtfully curated toolkit designed for building intuitive, accessible, and responsive digital products.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Card 1: Frontend Architecture -->
+                <div class="skill-card reveal delay-1">
+                    <div class="skill-icon-wrap">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h3>Core Frontend</h3>
+                    <p>Semantic HTML5 structure, modular CSS3 layouts with CSS variables, Grid, Flexbox, and modern asynchronous JavaScript.</p>
+                    <div class="skill-tags">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript (ES6+)</span>
+                        <span class="skill-badge">DOM Manipulation</span>
+                        <span class="skill-badge">Async / Fetch</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2: UI/UX & Responsive Systems -->
+                <div class="skill-card cyan reveal delay-2">
+                    <div class="skill-icon-wrap">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Responsive Design & UI</h3>
+                    <p>Mobile-first architecture, Bootstrap frameworks, fluid typography, glassmorphism, and seamless touch interactivity.</p>
+                    <div class="skill-tags">
+                        <span class="skill-badge">Responsive Layouts</span>
+                        <span class="skill-badge">Bootstrap 5</span>
+                        <span class="skill-badge">Glassmorphism</span>
+                        <span class="skill-badge">Micro-Animations</span>
+                        <span class="skill-badge">Cross-Browser</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3: Developer Tooling & Workflow -->
+                <div class="skill-card purple reveal delay-3">
+                    <div class="skill-icon-wrap">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <h3>Workflow & Tooling</h3>
+                    <p>Version control best practices, branch management, collaborative workflows, and static cloud hosting platforms.</p>
+                    <div class="skill-tags">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">Surge.sh</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Chrome DevTools</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4: Next-Gen AI Supercharging -->
+                <div class="skill-card emerald reveal delay-4">
+                    <div class="skill-icon-wrap">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3>AI-Accelerated Dev</h3>
+                    <p>Leveraging modern AI platforms to supercharge prototyping, code refactoring, test case generation, and design systems.</p>
+                    <div class="skill-tags">
+                        <span class="skill-badge">AI Prompting</span>
+                        <span class="skill-badge">Myraa AI</span>
+                        <span class="skill-badge">Jarvis Tools</span>
+                        <span class="skill-badge">Rapid Prototyping</span>
+                        <span class="skill-badge">Code Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag glow-animated">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Portfolio Showcase</span>
+                </div>
+                <h2 class="section-title">
+                    Featured Works & <span class="gradient-text">Live Deployments.</span>
+                </h2>
+                <p class="section-subtitle">
+                    Each project is deployed live and demonstrates real-world application of user-centric design, responsiveness, and performance.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: BYD Shark 6 Showcase -->
+                <div class="project-card reveal delay-1">
+                    <div class="project-media-wrap">
+                        <div class="browser-bar">
+                            <div class="browser-dots">
+                                <span class="b-dot"></span>
+                                <span class="b-dot"></span>
+                                <span class="b-dot"></span>
+                            </div>
+                            <div class="browser-url">
+                                <i class="fa-solid fa-lock"></i>
+                                https://byd-shark-6.surge.sh
+                            </div>
+                        </div>
+                        <div class="project-media-inner">
+                            <img src="Screenshot 2026-07-10 171017.png" alt="BYD Shark 6 Showcase Project Preview">
+                            <div class="project-overlay">
+                                <a href="https://byd-shark-6.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Launch Live App</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info-wrap">
+                        <div>
+                            <span class="project-category">Automotive Digital Showcase</span>
+                            <h3 class="project-title">BYD Shark 6 Hybrid Showcase</h3>
+                            <p class="project-desc">
+                                An immersive, high-impact automotive web presentation crafted to exhibit the futuristic engineering of the BYD Shark 6 PHEV pickup truck. Engineered with dynamic multi-column layouts, engaging visuals, and interactive capability specs highlighting DMO Super Hybrid technology.
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check"></i> High-definition product hero presentation & vehicle telemetry</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Fully responsive grid layout across mobile, tablet, and widescreen</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Deployed live on Surge with optimized asset delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">Modern CSS</span>
+                                <span class="tech-pill">Responsive Design</span>
+                                <span class="tech-pill">Automotive UI</span>
+                                <span class="tech-pill">Surge Deployment</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://byd-shark-6.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <span>Live Preview</span>
+                                    <i class="fa-solid fa-external-link"></i>
+                                </a>
+                                <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="btn-project-outline">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Source Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Interactive Registration Suite -->
+                <div class="project-card reverse reveal delay-2">
+                    <div class="project-media-wrap">
+                        <div class="browser-bar">
+                            <div class="browser-dots">
+                                <span class="b-dot"></span>
+                                <span class="b-dot"></span>
+                                <span class="b-dot"></span>
+                            </div>
+                            <div class="browser-url">
+                                <i class="fa-solid fa-lock"></i>
+                                https://icon-form.surge.sh
+                            </div>
+                        </div>
+                        <div class="project-media-inner">
+                            <img src="form.png" alt="Interactive User Registration Form Preview">
+                            <div class="project-overlay">
+                                <a href="https://icon-form.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Launch Live App</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info-wrap">
+                        <div>
+                            <span class="project-category">UX / Form Architecture</span>
+                            <h3 class="project-title">Interactive Registration & Validation Suite</h3>
+                            <p class="project-desc">
+                                A streamlined user onboarding portal designed with iconography, input field feedback, and accessible UX patterns. Built to solve common data entry friction with instant client-side feedback and clean modern styling.
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Contextual input icons and stateful focus styling</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Frictionless input validation and clean error handling UI</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Modular CSS structure adaptable to any web application</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">Form Validation</span>
+                                <span class="tech-pill">CSS Custom Properties</span>
+                                <span class="tech-pill">UI/UX Design</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://icon-form.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <span>Live Preview</span>
+                                    <i class="fa-solid fa-external-link"></i>
+                                </a>
+                                <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="btn-project-outline">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Source Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Structured Data Representation -->
+                <div class="project-card reveal delay-3">
+                    <div class="project-media-wrap">
+                        <div class="browser-bar">
+                            <div class="browser-dots">
+                                <span class="b-dot"></span>
+                                <span class="b-dot"></span>
+                                <span class="b-dot"></span>
+                            </div>
+                            <div class="browser-url">
+                                <i class="fa-solid fa-lock"></i>
+                                http://toheed-table.surge.sh
+                            </div>
+                        </div>
+                        <div class="project-media-inner">
+                            <img src="Screenshot 2026-07-10 172828.png" alt="Advanced Data Presentation Preview">
+                            <div class="project-overlay">
+                                <a href="http://toheed-table.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Launch Live App</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info-wrap">
+                        <div>
+                            <span class="project-category">Data Layout & CSS Engineering</span>
+                            <h3 class="project-title">Advanced Data Presentation & Layouts</h3>
+                            <p class="project-desc">
+                                An exploration of structured information architecture, table hierarchy, and CSS color matrices. Focuses on tabular data clarity, cell contrast, and responsive data formatting for administrative dashboards.
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Scannable tabular hierarchy and harmonious color palette</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Cross-browser consistent table borders and cell alignments</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Foundation for complex dashboard data representations</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">HTML Tables</span>
+                                <span class="tech-pill">CSS Layouts</span>
+                                <span class="tech-pill">Data Architecture</span>
+                                <span class="tech-pill">Color Coordination</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="http://toheed-table.surge.sh/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                                    <span>Live Preview</span>
+                                    <i class="fa-solid fa-external-link"></i>
+                                </a>
+                                <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="btn-project-outline">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Source Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         AI-ACCELERATED DEVELOPER ADVANTAGE
+         ========================================================================== -->
+    <section class="ai-section">
+        <div class="container">
+            <div class="ai-edge-card reveal glow-animated">
+                <div class="ai-edge-grid">
+                    <div class="ai-edge-content">
+                        <div class="section-tag" style="background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.4); color: #c084fc;">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>The Unfair Advantage</span>
+                        </div>
+                        <h3>AI-Supercharged Developer. <span>10x Production Velocity.</span></h3>
+                        <p>
+                            I don't just write static code — I combine foundational frontend discipline with state-of-the-art AI tooling (Myraa, Jarvis, and modern LLM development environments) to build bug-free, high-performance interfaces faster than traditional workflows permit.
+                        </p>
+                        <div class="ai-pill-grid">
+                            <div class="ai-pill">
+                                <i class="fa-solid fa-terminal"></i>
+                                <span>Zero-Waste Prototyping</span>
+                            </div>
+                            <div class="ai-pill">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Deep Code Validation</span>
+                            </div>
+                            <div class="ai-pill">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <span>Rapid Iteration Loops</span>
+                            </div>
+                            <div class="ai-pill">
+                                <i class="fa-solid fa-sparkles"></i>
+                                <span>Future-Proof Skillset</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ai-visual">
+                        <div class="ai-terminal">
+                            <p class="line-accent">// AI-Augmented Workflow Pipeline</p>
+                            <p><span class="line-success">✔</span> Concept & Architecture mapped</p>
+                            <p><span class="line-success">✔</span> AI-Assisted Component Scaffolding</p>
+                            <p><span class="line-success">✔</span> Strict Cross-Browser & Lint Check</p>
+                            <p><span class="line-success">✔</span> Deployed to Global CDN</p>
+                            <p style="margin-top: 10px; color: var(--accent-primary);">&gt; Status: Ready for High-Impact Roles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & CAREER MILESTONES (TIMELINE)
+         ========================================================================== -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag glow-animated">
+                    <i class="fa-solid fa-timeline"></i>
+                    <span>Journey & Milestones</span>
+                </div>
+                <h2 class="section-title">
+                    Education & <span class="gradient-text">Engineering Growth.</span>
+                </h2>
+                <p class="section-subtitle">
+                    A snapshot of my learning trajectory, hands-on milestones, and ongoing technical development.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2024 — Present</span>
+                        <h3 class="timeline-title">Frontend Engineering & Web Development Specialization</h3>
+                        <div class="timeline-sub">Intensive Hands-on Track · Karachi, Pakistan</div>
+                        <p class="timeline-desc">
+                            Focused on mastering modern semantic HTML5, advanced CSS layouts (Flexbox, CSS Grid, keyframe animations), modern JavaScript (ES6+ syntax, asynchronous programming, DOM lifecycle), and responsive UI engineering.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Continuous Track</span>
+                        <h3 class="timeline-title">Independent Live Projects & Production Deployments</h3>
+                        <div class="timeline-sub">Surge.sh Cloud Hosting & GitHub Open Source</div>
+                        <p class="timeline-desc">
+                            Authored and deployed live applications including automotive landing showcases, interactive registration portals, and data architectures. Established continuous deployment workflows and version control rigor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal delay-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Current Target</span>
+                        <h3 class="timeline-title">Seeking High-Impact Software Engineering Internships</h3>
+                        <div class="timeline-sub">Junior Developer & Frontend Internship Candidate</div>
+                        <p class="timeline-desc">
+                            Ready to contribute immediately to product teams, learn from seasoned senior architects, and bring high enthusiasm, modern coding standards, and AI-accelerated productivity to team goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & COLLABORATION SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag glow-animated">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Let's Build Something Exceptional</span>
+                </div>
+                <h2 class="section-title">
+                    Get In Touch & <span class="gradient-text">Hire Me.</span>
+                </h2>
+                <p class="section-subtitle">
+                    Have an internship opportunity, project collaboration, or exciting role? My inbox is always open.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Direct Contact Cards -->
+                <div class="contact-info-cards reveal-left delay-1">
+                    <a href="mailto:toheedhashim90@gmail.com" class="contact-card glow-animated">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Direct Email</h4>
+                            <p>toheedhashim90@gmail.com</p>
+                            <button type="button" class="copy-email-btn" data-email="toheedhashim90@gmail.com">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Click to copy email address</span>
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon" style="background: rgba(37, 211, 102, 0.12); border-color: rgba(37, 211, 102, 0.3); color: #25d366;">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp Instant Chat</h4>
+                            <p>Quick responses for opportunities & inquiries</p>
+                            <span style="font-size: 0.8rem; color: #25d366; font-family: var(--font-mono);">
+                                <i class="fa-solid fa-circle-dot"></i> Online & Reachable
+                            </span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub Profile</h4>
+                            <p>github.com/toheed90</p>
+                            <span style="font-size: 0.8rem; color: var(--accent-primary); font-family: var(--font-mono);">
+                                Explore repositories & code activity &rarr;
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="contact-card" style="cursor: default;">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location & Work Model</h4>
+                            <p>Karachi, Pakistan</p>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">
+                                Available for On-Site, Hybrid, & Remote Positions
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Message Form -->
+                <div class="contact-form-wrap reveal-right delay-2 float-animated">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="userName" class="form-label">Your Name</label>
+                            <input type="text" id="userName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userEmail" class="form-label">Your Email</label>
+                            <input type="email" id="userEmail" class="form-control" placeholder="e.g. sarah@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userSubject" class="form-label">Subject / Purpose</label>
+                            <input type="text" id="userSubject" class="form-control" placeholder="Internship Opportunity / Project Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userMessage" class="form-label">Your Message</label>
+                            <textarea id="userMessage" class="form-control" placeholder="Hello Toheed, we came across your portfolio and would love to discuss an opportunity..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="brand-logo">
+                        <div class="logo-icon">T</div>
+                        <span>TOHEED<span class="logo-dot">.</span></span>
+                    </a>
+                    <p>Frontend Developer crafting pixel-perfect, accessible, and high-performance digital experiences.</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://github.com/toheed90" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:toheedhashim90@gmail.com" class="social-link" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Toheed Hashim. All rights reserved.</p>
+                <p>Engineered with HTML5, Modern Vanilla CSS & JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action with Heavy Radar Pulse -->
+    <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="floating-whatsapp pulse-radar-heavy" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" title="Scroll to top" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification Element -->
+    <div class="toast-msg" id="toastMsg"></div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
